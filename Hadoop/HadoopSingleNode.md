@@ -43,7 +43,7 @@ Note: Ubuntu uses ¨apt-get¨ command to install software (e.g. JAVA, SSH) onlin
 java -version
 </code></pre>
 
-![ScreenShot](https://github.com/ykaitao/HadoopSparkSetup/blob/master/images/JAVA-not-installed.png)
+![ab](../images/JAVA-not-installed.png)
 
 
 The above figure shows that JAVA has not been installed.
