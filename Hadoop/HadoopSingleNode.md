@@ -42,7 +42,7 @@ Note: Ubuntu uses ¨apt-get¨ command to install software (e.g. JAVA, SSH) onlin
 <pre><code class="ruby">
 java -version
 </code></pre>
-!../images/JAVA-not-installed.png!
+![alt tag](../images/JAVA-not-installed.png)
 The above figure shows that JAVA has not been installed.
 ** Install JAVA using the following commands:
 <pre><code class="ruby">
