@@ -45,7 +45,7 @@ Note: Ubuntu uses ¨apt-get¨ command to install software (e.g. JAVA, SSH) onlin
 java -version
 </code></pre>
 
-![Java not installed](../images/JAVA-not-installed.png)
+![](../images/JAVA-not-installed.png)
 
 
 The above figure shows that JAVA has not been installed.
@@ -69,14 +69,18 @@ source ~/.bashrc
 <pre><code class="ruby">
 java -version
 </code></pre>
-!JAVA-installed.png!
+
+![](../images/JAVA-installed.png)
+
 The above figure shows that JAVA has be installed successfully.
 # Installing SSH
 ** The following command checks whether whether SSH has already been installed:
 <pre><code class="ruby">
 ssh localhost
 </code></pre>
-!SSH-not-installed.png!
+
+![](../images/SSH-not-installed.png)
+
 The above figure shows that SSH has not been installed.
 ** Install SSH using the following command:
 <pre><code class="ruby">
@@ -87,7 +91,9 @@ Note: *openssh-server* offers a very handy function *ssh-copy-id* (see [[Cluster
 <pre><code class="ruby">
 ssh localhost
 </code></pre>
-!SSH-installed-need-password.png! 
+
+![](../images/SSH-installed-need-password.png)
+
 The above image shows that ssh has been installed, however, passphrase is required in order to ssh to the localhost.
 ** If we want to ssh to localhost without a passphrase, execute the following commands:
 <pre><code class="ruby">
@@ -98,7 +104,9 @@ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 # (-f ~/.ssh/id_rsa) specifies the filename of the key file as (~/.ssh/id_rsa).  
 # For more information, please refer to: http://linux.die.net/man/1/ssh-keygen
 </code></pre>
-!SSH-keygen.png!
+
+![](../images/SSH-keygen.png)
+
 <pre><code class="ruby">
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 </code></pre>
@@ -107,7 +115,9 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 0600 ~/.ssh/authorized_keys
 </code></pre>
 ** Check the installation of SSH again:
-!SSH-installed.png!
+
+![](../images/SSH-installed.png)
+
 The above figure shows that SSH has been installed successfully and we can ssh to the localhost without a passphrase.
 Up to now, we have finished the pre-installation, next we will introduce the steps of Hadoop installation. 
 
@@ -116,7 +126,9 @@ h2. Hadoop installation
 # Download a recent stable release from one of the "Apache Download Mirrors":http://hadoop.apache.org/releases.html
 !Hadoop-miroor.png!
 We download the Hadoop2.7.2 binary (do not download the source because it needs to be compiled before being used).
-!Hadoop-downloaded.png!
+
+![](../images/Hadoop-downloaded.png)
+
 It can be seen that the compressed file of Hadoop2.7.2 is download to the folder ¨Downloads¨.
 # Uncompress, move and rename the Hadoop file using the following commands:
 <pre><code class="ruby">
@@ -151,7 +163,9 @@ h2. Hadoop testing
 /usr/local/hadoop/bin/hadoop version
 </code>
 </pre>
-!Hadoop-version.png!
+
+![](../images/Hadoop-version.png)
+
 # Run the given example ¨grep¨
 <pre>
 <code class="ruby">
@@ -164,5 +178,6 @@ bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar grep i
 cat output/*
 </code>
 </pre>
-!Hadoop-grep-runing.png!
-!Hadoop-grep-result.png!
+
+![](../images/Hadoop-grep-runing.png)
+![](../images/Hadoop-grep-result.png)
