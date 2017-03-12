@@ -47,7 +47,6 @@ java -version
 
 ![](../images/JAVA-not-installed.png)
 
-
 The above figure shows that JAVA has not been installed.
 ** Install JAVA using the following commands:
 <pre><code class="ruby">
@@ -180,4 +179,5 @@ cat output/*
 </pre>
 
 ![](../images/Hadoop-grep-runing.png)
+
 ![](../images/Hadoop-grep-result.png)
