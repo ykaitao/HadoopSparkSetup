@@ -29,7 +29,9 @@ sudo reboot # Restart the computer
 </pre>
 Note: You can use other names for this new account (not necessarily use ¨hduser¨). However keep in mind that, in a Hadoop cluster, the new user account on each computer must have the same name (e.g. ¨hduser¨).
 ** Log in using the new account => Open a terminal (Ctrl+Alt+T):
-!AccountCreated.png!
+
+![](../images/AccountCreated.png)
+
 ** Update the resource of software using the following command:
 <pre>
 <code class="ruby">
@@ -43,7 +45,7 @@ Note: Ubuntu uses ¨apt-get¨ command to install software (e.g. JAVA, SSH) onlin
 java -version
 </code></pre>
 
-![ab](../images/JAVA-not-installed.png)
+![Java not installed](../images/JAVA-not-installed.png)
 
 
 The above figure shows that JAVA has not been installed.
