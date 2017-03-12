@@ -1,10 +1,10 @@
-h1. Single Node Setup
+# Single Node Setup
 
 *Materials*: A computer with Linux installed + Access to the Internet
 *Explanation*: Hadoop supports Linux better than Windows, therefore install or use a machine that has Linux installed on it (i.e. Ubuntu 16.04 64-bit) on the computer (go to [[Ubuntu installation tutorial]]). The computer must have access to the internet because we need to install some software online.
 
 
-h2. Pre-installation
+# Pre-installation
  
 The pre-installation phrase includes: creating a new user account, installing two software (JAVA and SSH).
 *Explanation*: It is recommended to create a separate user account for Hadoop in order to isolate Hadoop file system from the Linux file system. Java is the main prerequisite for Hadoop. SSH is required when doing operations (e.g. copying files) across different computers of a Hadoop cluster.
